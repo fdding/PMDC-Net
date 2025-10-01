@@ -86,7 +86,7 @@ model_full = PMDC_Net(
 
 ```bash
 # Clone the repository
-git clone <[your-repo-url](https://github.com/fdding/PMDC-Net.git)>
+git clone https://github.com/fdding/PMDC-Net.git
 cd PMDC-Net
 
 # Install dependencies
