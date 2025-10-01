@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# PMDC-Net
-PMDC-Net
-=======
 # PMDC-Net: Channel-weighted multi-scale dilated feature network for robust retinal vessel segmentation in OCTA
 
 ## Overview
@@ -129,8 +125,6 @@ PMDC-Net demonstrates superior performance on retinal vessel segmentation tasks 
 For questions and support, please contact [13640440419@163.com].
 
 ## Acknowledgments
-
 - ROSE dataset: [ROSE Dataset](https://imed.nimte.ac.cn/dataofrose.html)
 - OCTA-500 dataset: [OCTA-500 Dataset](https://ieee-dataport.org/open-access/octa-500)
 - PyTorch framework for deep learning implementation
->>>>>>> c422576 (PMDC-Net)
