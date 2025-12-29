@@ -189,7 +189,7 @@ Compared with existing methods, PMDC-Net:
 ## 🚀 Getting Started
 
 ```
-git clone https://github.com/your-username/PMDC-Net.git
+git clone https://github.com/fdding/PMDC-Net.git
 cd PMDC-Net
 ```
 
