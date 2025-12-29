@@ -170,6 +170,7 @@
   Compared with existing methods, PMDC-Net:
 
   - better preserves thin capillaries,
+  
 - reduces vessel discontinuities,
     - suppresses over-segmentation and noise-induced artifacts.
     
@@ -178,6 +179,7 @@
     ## ⚙️ Implementation Details
 
     - Framework: **PyTorch**
+    
 - Input size: **512 × 512**
     - Optimizer: **Adam**
     - Learning rate: **5e-4** with cosine annealing scheduler
@@ -194,42 +196,52 @@ git clone https://github.com/fdding/PMDC-Net.git
     
     *(Instructions for environment setup, training, and inference will be updated.)*
 
-    ------
+    
 
-    ## 📄 Paper
+## 🚀 Getting Started
 
-    If you find this work useful, please consider citing our paper:
+```
+git clone https://github.com/your-username/PMDC-Net.git
+cd PMDC-Net
+```
 
-    ```
+*(Instructions for environment setup, training, and inference will be updated.)*
+
+------
+
+## 📄 Paper
+
+If you find this work useful, please consider citing our paper:
+
+```
 The paper associated with this repository is currently under review at a peer-reviewed journal.
-    
-    We will update this section with the official publication information and BibTeX citation after acceptance.
-    ```
-    
-    ------
 
-    ## 🙏 Acknowledgements
+We will update this section with the official publication information and BibTeX citation after acceptance.
+```
 
-    This work was conducted in collaboration with **Peking University Third Hospital (PKU Third Hospital)** as part of the project
+------
+
+## 🙏 Acknowledgements
+
+This work was conducted in collaboration with **Peking University Third Hospital (PKU Third Hospital)** as part of the project
  *“Early Intelligent Fundus Warning Methods for Obstructive Sleep Apnea (OSA)”*.
-    
-    We thank the authors of **ROSE-1**, **OCTA-500**, and **ROSSA** datasets for making their data publicly available.
 
-    ------
+We thank the authors of **ROSE-1**, **OCTA-500**, and **ROSSA** datasets for making their data publicly available.
 
-    ## 📬 Contact
+------
 
-    For questions, discussions, or collaborations, please contact:
+## 📬 Contact
 
-    - Fudeng Ding
-- Email: `dingfudeng@xs.ustb.edu.cn`
-    - Affiliation: University of Science and Technology Beijing
-    
-    ------
+For questions, discussions, or collaborations, please contact:
 
-    ## 📌 Notes
+- Fudeng Ding
+- Email: dingfudeng@xs.ustb.edu.cn
+- Affiliation: University of Science and Technology Beijing
 
-    - This repository is for **research purposes only**.
+------
+
+## 📌 Notes
+
+- This repository is for **research purposes only**.
 - Commercial use requires permission from the authors.
-    
-    - The code will be continuously updated.
+- The code will be continuously updated.
