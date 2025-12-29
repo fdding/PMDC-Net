@@ -28,14 +28,14 @@
   PMDC-Net follows an **encoder–decoder segmentation framework** enhanced with four carefully designed modules:
 
   📌 *Overall architecture of PMDC-Net*
-  ![](src\images\PMDC-NET.JPG)
+  ![](src/images/PMDC-NET.JPG)
 
   ### 🔹 Key Modules
 
   #### 1. Parallel Dilated Convolution Module (PDC)
 
   📌 *Structure of the PDC module*
-  ![](src\images\PDC.JPG)
+  ![](src/images/PDC.JPG)
 
   - Expands receptive fields using parallel dilated convolutions with different dilation rates.
   - Captures both global vessel structures and local capillary details.
@@ -46,7 +46,7 @@
   #### 2. Multi-Scale Feature Aggregation Module (MSFA)
 
   📌 *Structure of the MSFA module*
-  ![](src\images\MSFA.JPG)
+  ![](src/images/MSFA.JPG)
 
   - Aggregates contextual features at multiple scales.
   - Introduces channel-wise attention to highlight vessel-relevant features.
@@ -57,7 +57,7 @@
   #### 3. Decoder Attention Fusion Module (DAF)
 
   📌 *Structure of the DAF module*
-  ![](src\images\DAF.JPG)
+  ![](src/images/DAF.JPG)
 
   - Applies spatial attention during skip connections.
   - Suppresses noise and projection artifacts from shallow encoder features.
@@ -68,7 +68,7 @@
   #### 4. Channel Weighting Module (CW)
 
   📌 *Structure of the CW module*
-  ![](src\images\CW.JPG)
+  ![](src/images/CW.JPG)
 
   - Rebalances low-level structural features and high-level semantic features.
   - Prevents fine vessel details from being overwhelmed by strong semantic responses.
@@ -161,11 +161,11 @@
 
   📌 *Visual comparison of vessel segmentation results*
 
-  ![](src\images\ROSE-1_Result.JPG)
+  ![](src/images/ROSE-1_Result.JPG)
 
-  ![](src\images\OCTA_500_Result.JPG)
+  ![](src/images/OCTA_500_Result.JPG)
 
-  ![](src\images\ROSSA_Result.JPG)
+  ![](src/images/ROSSA_Result.JPG)
 
   Compared with existing methods, PMDC-Net:
 
