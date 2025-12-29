@@ -186,16 +186,6 @@
     - Loss function: **Weighted combination of Cross-Entropy Loss and Dice Loss**
     - Training strategy: data augmentation with geometric and photometric transformations
     
-    ------
-
-    ## 🚀 Getting Started
-
-    ```
-git clone https://github.com/fdding/PMDC-Net.git
-    ```
-    
-    *(Instructions for environment setup, training, and inference will be updated.)*
-
     
 
 ## 🚀 Getting Started
