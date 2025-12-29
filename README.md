@@ -222,7 +222,7 @@ We thank the authors of **ROSE-1**, **OCTA-500**, and **ROSSA** datasets for mak
 
 For questions, discussions, or collaborations, please contact:
 
-- Ding Fudeng
+- Fudeng Ding
 - Email: dingfudeng@xs.ustb.edu.cn
 - Affiliation: University of Science and Technology Beijing
 
