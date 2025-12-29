@@ -190,27 +190,18 @@ class UpConvBlock(torch.nn.Module):
 class DGNet(nn.Module):
     """
     DGNet: Direction-Guided Network for Medical Image Segmentation
-    
-    Args:
-        n_channels: 输入通道数
-        n_classes: 输出类别数
-        img_size: 输入图像尺寸
-        base_channels: 基础通道数
-        use_attention: 是否使用注意力机制
-        deep_supervision: 是否使用深度监督
+
     """
     def __init__(self, n_channels=1, n_classes=2, img_size=256, base_channels=32, 
                  use_attention=True, deep_supervision=False):
         super(DGNet, self).__init__()
-        
-        # 标准化参数
+
         self.n_channels = n_channels
         self.n_classes = n_classes
         self.img_size = img_size if isinstance(img_size, tuple) else (img_size, img_size)
         self.use_attention = use_attention
         self.deep_supervision = deep_supervision
-        
-        # 构建层定义
+
         layers = (base_channels, base_channels, base_channels, base_channels, base_channels)
         
         # Set the number of output features (the last layer size)
@@ -293,7 +284,6 @@ class DGNet(nn.Module):
         return output
     
     def get_model_info(self):
-        """获取模型信息"""
         return {
             'model_name': 'DGNet',
             'input_channels': self.n_channels,
@@ -303,39 +293,3 @@ class DGNet(nn.Module):
             'deep_supervision': self.deep_supervision,
             'description': 'DGNet: Direction-Guided Network for Medical Image Segmentation'
         }
-
-
-class DGNetLite(DGNet):
-    """DGNet轻量级版本，适用于内存受限环境"""
-    def __init__(self, n_channels=1, n_classes=2, img_size=256, base_channels=16, 
-                 use_attention=False, deep_supervision=False):
-        super().__init__(n_channels, n_classes, img_size, base_channels, use_attention, deep_supervision)
-        
-    def get_model_info(self):
-        info = super().get_model_info()
-        info['model_name'] = 'DGNet-Lite'
-        info['description'] = 'DGNet Lite: Lightweight version for memory-constrained environments'
-        return info
-
-
-class VesselDGNet(DGNet):
-    """血管专用DGNet，针对血管分割优化"""
-    def __init__(self, n_channels=1, n_classes=2, img_size=256, base_channels=32, 
-                 use_attention=True, deep_supervision=True):
-        super().__init__(n_channels, n_classes, img_size, base_channels, use_attention, deep_supervision)
-        
-    def get_model_info(self):
-        info = super().get_model_info()
-        info['model_name'] = 'Vessel-DGNet'
-        info['description'] = 'Vessel-DGNet: Direction-Guided Network specialized for vessel segmentation'
-        return info
-
-
-# Example usage:
-if __name__ == "__main__":
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = DGNet(n_channels=1, n_classes=2, img_size=256).to(device)
-    input_tensor = torch.randn(2, 1, 256, 256).to(device)
-    output = model(input_tensor)
-    print("Output shape:", output.shape)
-    print("Model info:", model.get_model_info())

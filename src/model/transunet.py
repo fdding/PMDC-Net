@@ -121,18 +121,15 @@ class CNNEncoder(nn.Module):
         
     def forward(self, x):
         features = []
-        
-        # 第一层
+
         x1 = self.conv1(x)
         features.append(x1)
         x = self.pool(x1)
-        
-        # 第二层
+
         x2 = self.conv2(x)
         features.append(x2)
         x = self.pool(x2)
-        
-        # 第三层
+
         x3 = self.conv3(x)
         features.append(x3)
         x = self.pool(x3)
@@ -149,7 +146,6 @@ class DecoderBlock(nn.Module):
     def forward(self, x, skip=None):
         x = self.up(x)
         if skip is not None:
-            # 确保尺寸匹配
             if x.shape[2:] != skip.shape[2:]:
                 x = F.interpolate(x, size=skip.shape[2:], mode='bilinear', align_corners=False)
             x = torch.cat([x, skip], dim=1)
