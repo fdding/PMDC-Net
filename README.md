@@ -4,7 +4,7 @@
 
 ------
 
-## 📌 Overview
+## Overview
 
 This repository provides the official implementation of **PMDC-Net**, a deep learning framework designed for **retinal vessel segmentation in Optical Coherence Tomography Angiography (OCTA)** images.
 
@@ -21,14 +21,14 @@ The proposed method has been evaluated on multiple public OCTA datasets and demo
 
 ------
 
-## 🧠 Network Architecture
+## Network Architecture
 
 PMDC-Net follows an **encoder–decoder segmentation framework** enhanced with four carefully designed modules:
 
 📌 *Overall architecture of PMDC-Net*
 ![](src/images/PMDC-NET.JPG)
 
-### 🔹 Key Modules
+### Key Modules
 
 #### 1. Parallel Dilated Convolution Module (PDC)
 
@@ -54,7 +54,7 @@ PMDC-Net follows an **encoder–decoder segmentation framework** enhanced with f
 
 #### 3. Decoder Attention Fusion Module (DAF)
 
-📌 *Structure of the DAF module*
+*Structure of the DAF module*
 ![](src/images/DAF.JPG)
 
 - Applies spatial attention during skip connections.
@@ -65,7 +65,7 @@ PMDC-Net follows an **encoder–decoder segmentation framework** enhanced with f
 
 #### 4. Channel Weighting Module (CW)
 
-📌 *Structure of the CW module*
+Structure of the CW module*
 ![](src/images/CW.JPG)
 
 - Rebalances low-level structural features and high-level semantic features.
@@ -74,11 +74,11 @@ PMDC-Net follows an **encoder–decoder segmentation framework** enhanced with f
 
 ------
 
-## 📊 Experimental Results
+## Experimental Results
 
 PMDC-Net has been evaluated on **three public OCTA datasets**:
 
-### 📁 Datasets
+### Datasets
 
 - **ROSE-1**
    https://imed.nimte.ac.cn/dataofrose.html
@@ -91,9 +91,9 @@ For all datasets, en face OCTA images were generated using **maximum intensity p
 
 ------
 
-### 📈 Quantitative Performance
+### Quantitative Performance
 
-📌 *Performance comparison on different datasets*
+*Performance comparison on different datasets*
 
 | ROSE-1                |           |           |           |           |           |           |
 | --------------------- | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -155,9 +155,9 @@ PMDC-Net consistently achieves competitive or superior performance in terms of *
 
 ------
 
-### 👁 Qualitative Results
+### Qualitative Results
 
-📌 *Visual comparison of vessel segmentation results*
+*Visual comparison of vessel segmentation results*
 
 ![](src/images/ROSE-1_Result.JPG)
 
@@ -186,7 +186,7 @@ Compared with existing methods, PMDC-Net:
     
     
 
-## 🚀 Getting Started
+## Getting Started
 
 ```
 git clone https://github.com/fdding/PMDC-Net.git
@@ -197,7 +197,7 @@ cd PMDC-Net
 
 ------
 
-## 📄 Paper
+## Paper
 
 If you find this work useful, please consider citing our paper:
 
@@ -209,7 +209,7 @@ We will update this section with the official publication information and BibTeX
 
 ------
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 This work was conducted in collaboration with **Peking University Third Hospital (PKU Third Hospital)** as part of the project
  *“Early Intelligent Fundus Warning Methods for Obstructive Sleep Apnea (OSA)”*.
@@ -218,7 +218,7 @@ We thank the authors of **ROSE-1**, **OCTA-500**, and **ROSSA** datasets for mak
 
 ------
 
-## 📬 Contact
+## Contact
 
 For questions, discussions, or collaborations, please contact:
 
@@ -228,7 +228,7 @@ For questions, discussions, or collaborations, please contact:
 
 ------
 
-## 📌 Notes
+## Notes
 
 - This repository is for **research purposes only**.
 - Commercial use requires permission from the authors.
