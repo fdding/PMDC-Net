@@ -25,14 +25,14 @@ The proposed method has been evaluated on multiple public OCTA datasets and demo
 
 PMDC-Net follows an **encoder–decoder segmentation framework** enhanced with four carefully designed modules:
 
-📌 *Overall architecture of PMDC-Net*
+*Overall architecture of PMDC-Net*
 ![](src/images/PMDC-NET.JPG)
 
 ### Key Modules
 
 #### 1. Parallel Dilated Convolution Module (PDC)
 
-📌 *Structure of the PDC module*
+*Structure of the PDC module*
 ![](src/images/PDC.JPG)
 
 - Expands receptive fields using parallel dilated convolutions with different dilation rates.
@@ -43,7 +43,7 @@ PMDC-Net follows an **encoder–decoder segmentation framework** enhanced with f
 
 #### 2. Multi-Scale Feature Aggregation Module (MSFA)
 
-📌 *Structure of the MSFA module*
+Structure of the MSFA module*
 ![](src/images/MSFA.JPG)
 
 - Aggregates contextual features at multiple scales.
