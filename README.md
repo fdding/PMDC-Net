@@ -202,9 +202,15 @@ cd PMDC-Net
 If you find this work useful, please consider citing our paper:
 
 ```
-The paper associated with this repository is currently under review at a peer-reviewed journal.
-
-We will update this section with the official publication information and BibTeX citation after acceptance.
+@article{ding2026pmdc,
+  title={PMDC-Net: Channel-weighted multi-scale dilated feature network for robust retinal vessel segmentation in OCTA},
+  author={Ding, Fudeng and Chen, Cheng and Wang, Xin and Ning, Huansheng},
+  journal={Biomedical Signal Processing and Control},
+  volume={118},
+  pages={109779},
+  year={2026},
+  publisher={Elsevier}
+}
 ```
 
 ------
