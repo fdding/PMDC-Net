@@ -1,6 +1,11 @@
 # **PMDC-Net**
 
-**PMDC-Net: Channel-weighted Multi-scale Dilated Feature Network for Robust Retinal Vessel Segmentation in OCTA**
+# **PMDC-Net**
+
+### *PMDC-Net: Channel-weighted Multi-scale Dilated Feature Network for Robust Retinal Vessel Segmentation in OCTA*
+
+📄 **Published in:** *Biomedical Signal Processing and Control*  
+🔗 **Article:** https://www.sciencedirect.com/science/article/abs/pii/S1746809426003332
 
 ------
 
